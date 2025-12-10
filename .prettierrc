@@ -1,0 +1,24 @@
+{
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "printWidth": 110,
+  "arrowParens": "always",
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.vue",
+      "options": {
+        "parser": "vue",
+        "printWidth": 120
+      }
+    }
+  ]
+}

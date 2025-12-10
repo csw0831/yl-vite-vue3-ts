@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "~/*": ["typings/*"]
+    }
+  },
+  "extends": ["./tsconfig.app.json", "./tsconfig.node.json"],
+  "exclude": ["node_modules"],
+  "include": [
+    "src/**/*.d.ts",
+    "types/**/*.d.ts",
+    "build/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "typings",
+    "auto-imports.d.ts",
+    "components.d.ts"
+  ]
+}
