@@ -14,6 +14,7 @@ const __filename = url.fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./",
   hot: true,
   plugins: [
     vue(),
@@ -73,8 +74,7 @@ export default defineConfig({
         entryFileNames: "static/js/[name]-[hash].js",
         assetFileNames: "static/[ext]/[name]-[hash].[ext]",
         manualChunks: {
-          elementPlus: ["element-plus"],
-          elementIcons: ["@element-plus/icons-vue"]
+          elementPlus: ["element-plus", "@element-plus/icons-vue"],
         }
       }
     }
